@@ -1,0 +1,521 @@
+[0m10:42:23.070438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc198475310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc198afbd30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc198afbc70>]}
+
+
+============================== 10:42:23.074376 | 4d7be280-61eb-4f2a-abe1-6b5cbf346ee4 ==============================
+[0m10:42:23.074376 [info ] [MainThread]: Running with dbt=1.7.2
+[0m10:42:23.074927 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt init first_dbt_project_on_vm', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:42:23.075780 [debug] [MainThread]: Starter project path: /usr/local/lib/python3.9/dist-packages/dbt/include/starter_project
+[0m10:42:23.078025 [info ] [MainThread]: 
+Your new dbt project "first_dbt_project_on_vm" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m10:42:23.078322 [info ] [MainThread]: Setting up your profile.
+[0m10:42:23.078903 [error] [MainThread]: Encountered an error:
+
+[0m10:42:23.080072 [error] [MainThread]: Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/dbt/cli/requires.py", line 90, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/dist-packages/dbt/cli/requires.py", line 75, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/dist-packages/dbt/cli/main.py", line 515, in init
+    results = task.run()
+  File "/usr/local/lib/python3.9/dist-packages/dbt/task/init.py", line 344, in run
+    self.setup_profile(profile_name)
+  File "/usr/local/lib/python3.9/dist-packages/dbt/task/init.py", line 263, in setup_profile
+    adapter = self.ask_for_adapter_choice()
+  File "/usr/local/lib/python3.9/dist-packages/dbt/task/init.py", line 244, in ask_for_adapter_choice
+    numeric_choice = click.prompt(prompt_msg, type=click.INT)
+  File "/usr/local/lib/python3.9/dist-packages/click/termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+  File "/usr/local/lib/python3.9/dist-packages/click/termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m10:42:23.080943 [debug] [MainThread]: Resource report: {"command_name": "init", "command_wall_clock_time": 0.01610318, "process_user_time": 1.773882, "process_kernel_time": 0.060362, "process_mem_max_rss": "88256", "process_out_blocks": "64", "command_success": false, "process_in_blocks": "0"}
+[0m10:42:23.081508 [debug] [MainThread]: Command `dbt init` failed at 10:42:23.081381 after 0.02 seconds
+[0m10:42:23.081867 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc198475310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc198b0a130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc198b0a190>]}
+[0m10:42:23.082195 [debug] [MainThread]: Flushing usage events
+[0m10:44:02.445549 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5fed458730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5fedb4fd60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5fedb4fca0>]}
+
+
+============================== 10:44:02.448697 | 1d4325ed-adda-4045-ad00-4cef6a302f39 ==============================
+[0m10:44:02.448697 [info ] [MainThread]: Running with dbt=1.7.2
+[0m10:44:02.449159 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init first_dbt_project_on_vm', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:44:02.449904 [info ] [MainThread]: A project called first_dbt_project_on_vm already exists here.
+[0m10:44:02.450594 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.00990226, "process_user_time": 1.770798, "process_kernel_time": 0.043981, "process_mem_max_rss": "88100", "process_out_blocks": "16", "process_in_blocks": "0"}
+[0m10:44:02.451141 [debug] [MainThread]: Command `dbt init` succeeded at 10:44:02.451009 after 0.01 seconds
+[0m10:44:02.451460 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5fed458730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5fef578c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5fedb5d0d0>]}
+[0m10:44:02.451768 [debug] [MainThread]: Flushing usage events
+[0m10:47:05.813199 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f527e208070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f527e89d8e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f527e89da60>]}
+
+
+============================== 10:47:05.816551 | f4427b23-ec54-4a1d-881d-c7d65538c246 ==============================
+[0m10:47:05.816551 [info ] [MainThread]: Running with dbt=1.7.2
+[0m10:47:05.817069 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/rsa-key-VM-GCP/workspace/first-pipeline', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt init first_dbt_project_on_vm', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:47:05.817898 [info ] [MainThread]: A project called first_dbt_project_on_vm already exists here.
+[0m10:47:05.818646 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.05177253, "process_user_time": 1.796921, "process_kernel_time": 0.064414, "process_mem_max_rss": "88900", "process_out_blocks": "8", "process_in_blocks": "0"}
+[0m10:47:05.819285 [debug] [MainThread]: Command `dbt init` succeeded at 10:47:05.819148 after 0.05 seconds
+[0m10:47:05.819614 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f527e208070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f527c177bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f527c169520>]}
+[0m10:47:05.819946 [debug] [MainThread]: Flushing usage events
+[0m10:49:35.463075 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1360108310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f135e04cf40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f135e04c610>]}
+
+
+============================== 10:49:35.468034 | 7851b23f-3515-4946-a306-d05b7f6a1634 ==============================
+[0m10:49:35.468034 [info ] [MainThread]: Running with dbt=1.7.2
+[0m10:49:35.468515 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/rsa-key-VM-GCP/workspace/first-pipeline', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init first_dbt_project_on_vm', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:49:35.469349 [info ] [MainThread]: A project called first_dbt_project_on_vm already exists here.
+[0m10:49:35.470111 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.05176667, "process_user_time": 1.788366, "process_kernel_time": 0.08384, "process_mem_max_rss": "88896", "process_out_blocks": "8", "process_in_blocks": "0"}
+[0m10:49:35.470673 [debug] [MainThread]: Command `dbt init` succeeded at 10:49:35.470540 after 0.05 seconds
+[0m10:49:35.471090 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1360108310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f135e04cbe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f135e04cbb0>]}
+[0m10:49:35.471413 [debug] [MainThread]: Flushing usage events
+[0m10:49:52.565069 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f70c38ac070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f70c3f418e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f70c3f41a60>]}
+
+
+============================== 10:49:52.568481 | 74d04b46-a6fc-4e10-bd42-0cbe107411d8 ==============================
+[0m10:49:52.568481 [info ] [MainThread]: Running with dbt=1.7.2
+[0m10:49:52.568946 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/rsa-key-VM-GCP/workspace/first-pipeline', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m10:49:52.569474 [info ] [MainThread]: dbt version: 1.7.2
+[0m10:49:52.569788 [info ] [MainThread]: python version: 3.9.2
+[0m10:49:52.570626 [info ] [MainThread]: python path: /usr/bin/python3
+[0m10:49:52.570948 [info ] [MainThread]: os info: Linux-5.10.0-26-cloud-amd64-x86_64-with-glibc2.31
+[0m10:49:52.767334 [info ] [MainThread]: Using profiles dir at /home/rsa-key-VM-GCP/workspace/first-pipeline
+[0m10:49:52.767831 [info ] [MainThread]: Using profiles.yml file at /home/rsa-key-VM-GCP/workspace/first-pipeline/profiles.yml
+[0m10:49:52.768109 [info ] [MainThread]: Using dbt_project.yml file at /home/rsa-key-VM-GCP/workspace/first-pipeline/dbt_project.yml
+[0m10:49:52.768543 [info ] [MainThread]: adapter type: snowflake
+[0m10:49:52.768795 [info ] [MainThread]: adapter version: 1.7.0
+[0m10:49:52.769090 [info ] [MainThread]: Configuration:
+[0m10:49:52.769324 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m10:49:52.769547 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m10:49:52.769770 [info ] [MainThread]: Required dependencies:
+[0m10:49:52.770052 [debug] [MainThread]: Executing "git --help"
+[0m10:49:52.774894 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:49:52.775443 [debug] [MainThread]: STDERR: "b''"
+[0m10:49:52.775728 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:49:52.775996 [info ] [MainThread]: Connection:
+[0m10:49:52.776283 [info ] [MainThread]:   account: pe15223.southeast-asia.azure
+[0m10:49:52.776532 [info ] [MainThread]:   user: alanzapex
+[0m10:49:52.776759 [info ] [MainThread]:   database: HDB
+[0m10:49:52.776987 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m10:49:52.777208 [info ] [MainThread]:   role: None
+[0m10:49:52.777442 [info ] [MainThread]:   schema: public
+[0m10:49:52.777659 [info ] [MainThread]:   authenticator: None
+[0m10:49:52.777874 [info ] [MainThread]:   private_key_path: None
+[0m10:49:52.778090 [info ] [MainThread]:   token: None
+[0m10:49:52.778323 [info ] [MainThread]:   oauth_client_id: None
+[0m10:49:52.778546 [info ] [MainThread]:   query_tag: None
+[0m10:49:52.778802 [info ] [MainThread]:   client_session_keep_alive: False
+[0m10:49:52.779083 [info ] [MainThread]:   host: None
+[0m10:49:52.779303 [info ] [MainThread]:   port: None
+[0m10:49:52.779517 [info ] [MainThread]:   proxy_host: None
+[0m10:49:52.779729 [info ] [MainThread]:   proxy_port: None
+[0m10:49:52.779939 [info ] [MainThread]:   protocol: None
+[0m10:49:52.780179 [info ] [MainThread]:   connect_retries: 1
+[0m10:49:52.780411 [info ] [MainThread]:   connect_timeout: None
+[0m10:49:52.780633 [info ] [MainThread]:   retry_on_database_errors: False
+[0m10:49:52.780860 [info ] [MainThread]:   retry_all: False
+[0m10:49:52.781073 [info ] [MainThread]:   insecure_mode: False
+[0m10:49:52.781284 [info ] [MainThread]:   reuse_connections: None
+[0m10:49:52.781710 [info ] [MainThread]: Registered adapter: snowflake=1.7.0
+[0m10:49:52.782352 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m10:49:52.783494 [debug] [MainThread]: Using snowflake connection "debug"
+[0m10:49:52.783769 [debug] [MainThread]: On debug: select 1 as id
+[0m10:49:52.784011 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:49:54.274040 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m10:49:54.275340 [debug] [MainThread]: On debug: Close
+[0m10:49:54.659255 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m10:49:54.659789 [info ] [MainThread]: [31m1 check failed:[0m
+[0m10:49:54.660085 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/rsa-key-VM-GCP/workspace/first-pipeline/dbt_project.yml> not found
+
+[0m10:49:54.660924 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 2.1432502, "process_user_time": 2.056889, "process_kernel_time": 0.087744, "process_mem_max_rss": "110788", "process_out_blocks": "24", "command_success": false, "process_in_blocks": "0"}
+[0m10:49:54.661542 [debug] [MainThread]: Command `dbt debug` failed at 10:49:54.661394 after 2.14 seconds
+[0m10:49:54.661896 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m10:49:54.662240 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f70c38ac070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f70c17eed00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f70c0733490>]}
+[0m10:49:54.662611 [debug] [MainThread]: Flushing usage events
+[0m10:55:40.802794 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1cc9b894f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1cc7ad45b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1cc7ad4250>]}
+
+
+============================== 10:55:40.806094 | 195250f9-c6d5-485c-ad5a-be4c18d810db ==============================
+[0m10:55:40.806094 [info ] [MainThread]: Running with dbt=1.7.2
+[0m10:55:40.806683 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/rsa-key-VM-GCP/workspace/first-pipeline', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init first_dbt_project_on_vm', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:55:40.807567 [info ] [MainThread]: A project called first_dbt_project_on_vm already exists here.
+[0m10:55:40.808311 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.05130434, "process_user_time": 1.780767, "process_kernel_time": 0.084245, "process_mem_max_rss": "88652", "process_out_blocks": "16", "process_in_blocks": "0"}
+[0m10:55:40.808866 [debug] [MainThread]: Command `dbt init` succeeded at 10:55:40.808737 after 0.05 seconds
+[0m10:55:40.809193 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1cc9b894f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1cc7afce80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1cc7afcca0>]}
+[0m10:55:40.809513 [debug] [MainThread]: Flushing usage events
+[0m10:58:36.417653 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5cc14bb310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5cbf3fff40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5cbf3ff610>]}
+
+
+============================== 10:58:36.420816 | c72b908f-275f-47ef-b606-8df783fffcfb ==============================
+[0m10:58:36.420816 [info ] [MainThread]: Running with dbt=1.7.2
+[0m10:58:36.421312 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/rsa-key-VM-GCP/workspace/first-pipeline', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt init first_dbt_project_on_vm', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m10:58:36.422138 [info ] [MainThread]: A project called first_dbt_project_on_vm already exists here.
+[0m10:58:36.422961 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.04946755, "process_user_time": 1.78308, "process_kernel_time": 0.064097, "process_mem_max_rss": "88864", "process_out_blocks": "8", "process_in_blocks": "0"}
+[0m10:58:36.423538 [debug] [MainThread]: Command `dbt init` succeeded at 10:58:36.423407 after 0.05 seconds
+[0m10:58:36.423878 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5cc14bb310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5cbf3ffbe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5cbf3ffbb0>]}
+[0m10:58:36.424193 [debug] [MainThread]: Flushing usage events
+[0m10:58:53.351933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5cd187f340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5cd2fee4f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ccf7c95e0>]}
+
+
+============================== 10:58:53.355116 | 5b6e6a58-0a2f-47ee-b14e-112273c92498 ==============================
+[0m10:58:53.355116 [info ] [MainThread]: Running with dbt=1.7.2
+[0m10:58:53.355578 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/rsa-key-VM-GCP/workspace/first-pipeline', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m10:58:53.356064 [info ] [MainThread]: dbt version: 1.7.2
+[0m10:58:53.356323 [info ] [MainThread]: python version: 3.9.2
+[0m10:58:53.356575 [info ] [MainThread]: python path: /usr/bin/python3
+[0m10:58:53.356883 [info ] [MainThread]: os info: Linux-5.10.0-26-cloud-amd64-x86_64-with-glibc2.31
+[0m10:58:53.559283 [info ] [MainThread]: Using profiles dir at /home/rsa-key-VM-GCP/workspace/first-pipeline
+[0m10:58:53.559735 [info ] [MainThread]: Using profiles.yml file at /home/rsa-key-VM-GCP/workspace/first-pipeline/profiles.yml
+[0m10:58:53.560005 [info ] [MainThread]: Using dbt_project.yml file at /home/rsa-key-VM-GCP/workspace/first-pipeline/dbt_project.yml
+[0m10:58:53.560449 [info ] [MainThread]: adapter type: snowflake
+[0m10:58:53.560821 [info ] [MainThread]: adapter version: 1.7.0
+[0m10:58:53.561119 [info ] [MainThread]: Configuration:
+[0m10:58:53.561355 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m10:58:53.561583 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m10:58:53.561816 [info ] [MainThread]: Required dependencies:
+[0m10:58:53.562084 [debug] [MainThread]: Executing "git --help"
+[0m10:58:53.566293 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:58:53.566879 [debug] [MainThread]: STDERR: "b''"
+[0m10:58:53.567165 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:58:53.567451 [info ] [MainThread]: Connection:
+[0m10:58:53.567736 [info ] [MainThread]:   account: pe15223.southeast-asia.azure
+[0m10:58:53.567970 [info ] [MainThread]:   user: alanzapex
+[0m10:58:53.568190 [info ] [MainThread]:   database: HDB
+[0m10:58:53.568413 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m10:58:53.568626 [info ] [MainThread]:   role: None
+[0m10:58:53.568869 [info ] [MainThread]:   schema: public
+[0m10:58:53.569095 [info ] [MainThread]:   authenticator: None
+[0m10:58:53.569321 [info ] [MainThread]:   private_key_path: None
+[0m10:58:53.569537 [info ] [MainThread]:   token: None
+[0m10:58:53.569757 [info ] [MainThread]:   oauth_client_id: None
+[0m10:58:53.569969 [info ] [MainThread]:   query_tag: None
+[0m10:58:53.570181 [info ] [MainThread]:   client_session_keep_alive: False
+[0m10:58:53.570401 [info ] [MainThread]:   host: None
+[0m10:58:53.570611 [info ] [MainThread]:   port: None
+[0m10:58:53.570875 [info ] [MainThread]:   proxy_host: None
+[0m10:58:53.571096 [info ] [MainThread]:   proxy_port: None
+[0m10:58:53.571314 [info ] [MainThread]:   protocol: None
+[0m10:58:53.571522 [info ] [MainThread]:   connect_retries: 1
+[0m10:58:53.571727 [info ] [MainThread]:   connect_timeout: None
+[0m10:58:53.571932 [info ] [MainThread]:   retry_on_database_errors: False
+[0m10:58:53.572139 [info ] [MainThread]:   retry_all: False
+[0m10:58:53.572353 [info ] [MainThread]:   insecure_mode: False
+[0m10:58:53.572558 [info ] [MainThread]:   reuse_connections: None
+[0m10:58:53.572956 [info ] [MainThread]: Registered adapter: snowflake=1.7.0
+[0m10:58:53.573568 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m10:58:53.574538 [debug] [MainThread]: Using snowflake connection "debug"
+[0m10:58:53.574837 [debug] [MainThread]: On debug: select 1 as id
+[0m10:58:53.575087 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:58:54.990491 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m10:58:54.991819 [debug] [MainThread]: On debug: Close
+[0m10:58:55.388042 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m10:58:55.388510 [info ] [MainThread]: [31m1 check failed:[0m
+[0m10:58:55.388766 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/rsa-key-VM-GCP/workspace/first-pipeline/dbt_project.yml> not found
+
+[0m10:58:55.389560 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 2.0809517, "process_user_time": 1.996529, "process_kernel_time": 0.096044, "process_mem_max_rss": "110840", "process_out_blocks": "24", "command_success": false, "process_in_blocks": "0"}
+[0m10:58:55.390223 [debug] [MainThread]: Command `dbt debug` failed at 10:58:55.390076 after 2.08 seconds
+[0m10:58:55.390610 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m10:58:55.390990 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5cd187f340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5cce70b280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5cce70bd90>]}
+[0m10:58:55.391339 [debug] [MainThread]: Flushing usage events
+[0m11:02:42.158921 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4bdaaea730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4bd8aaee80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4bd8aae3a0>]}
+
+
+============================== 11:02:42.162289 | e38e7647-7ec7-47e6-845c-1330eb29e007 ==============================
+[0m11:02:42.162289 [info ] [MainThread]: Running with dbt=1.7.2
+[0m11:02:42.162842 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/home/rsa-key-VM-GCP/workspace/first-pipeline', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init first_dbt_project_on_vm', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:02:42.163688 [info ] [MainThread]: A project called first_dbt_project_on_vm already exists here.
+[0m11:02:42.164458 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.05156763, "process_user_time": 1.815784, "process_kernel_time": 0.076305, "process_mem_max_rss": "88836", "process_out_blocks": "16", "process_in_blocks": "0"}
+[0m11:02:42.165058 [debug] [MainThread]: Command `dbt init` succeeded at 11:02:42.164916 after 0.05 seconds
+[0m11:02:42.165415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4bdaaea730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4bd8a9ea00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4bd8a9e250>]}
+[0m11:02:42.165743 [debug] [MainThread]: Flushing usage events
+[0m11:03:00.296488 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc646753070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc646dec8e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc646deca60>]}
+
+
+============================== 11:03:00.299662 | d44039b7-f5c7-431e-b284-a60674abd05d ==============================
+[0m11:03:00.299662 [info ] [MainThread]: Running with dbt=1.7.2
+[0m11:03:00.300112 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/rsa-key-VM-GCP/workspace/first-pipeline', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m11:03:00.300600 [info ] [MainThread]: dbt version: 1.7.2
+[0m11:03:00.300859 [info ] [MainThread]: python version: 3.9.2
+[0m11:03:00.301085 [info ] [MainThread]: python path: /usr/bin/python3
+[0m11:03:00.301316 [info ] [MainThread]: os info: Linux-5.10.0-26-cloud-amd64-x86_64-with-glibc2.31
+[0m11:03:00.497353 [info ] [MainThread]: Using profiles dir at /home/rsa-key-VM-GCP/workspace/first-pipeline
+[0m11:03:00.497818 [info ] [MainThread]: Using profiles.yml file at /home/rsa-key-VM-GCP/workspace/first-pipeline/profiles.yml
+[0m11:03:00.498103 [info ] [MainThread]: Using dbt_project.yml file at /home/rsa-key-VM-GCP/workspace/first-pipeline/dbt_project.yml
+[0m11:03:00.498538 [info ] [MainThread]: adapter type: snowflake
+[0m11:03:00.498857 [info ] [MainThread]: adapter version: 1.7.0
+[0m11:03:00.499144 [info ] [MainThread]: Configuration:
+[0m11:03:00.499383 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:03:00.499611 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m11:03:00.499831 [info ] [MainThread]: Required dependencies:
+[0m11:03:00.500108 [debug] [MainThread]: Executing "git --help"
+[0m11:03:00.504979 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:03:00.505545 [debug] [MainThread]: STDERR: "b''"
+[0m11:03:00.505831 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:03:00.506108 [info ] [MainThread]: Connection:
+[0m11:03:00.506395 [info ] [MainThread]:   account: pe15223.southeast-asia.azure
+[0m11:03:00.506664 [info ] [MainThread]:   user: alanzapex
+[0m11:03:00.506952 [info ] [MainThread]:   database: HDB
+[0m11:03:00.507204 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m11:03:00.507442 [info ] [MainThread]:   role: None
+[0m11:03:00.507665 [info ] [MainThread]:   schema: public
+[0m11:03:00.507883 [info ] [MainThread]:   authenticator: None
+[0m11:03:00.508103 [info ] [MainThread]:   private_key_path: None
+[0m11:03:00.508318 [info ] [MainThread]:   token: None
+[0m11:03:00.508542 [info ] [MainThread]:   oauth_client_id: None
+[0m11:03:00.508756 [info ] [MainThread]:   query_tag: None
+[0m11:03:00.508969 [info ] [MainThread]:   client_session_keep_alive: False
+[0m11:03:00.509190 [info ] [MainThread]:   host: None
+[0m11:03:00.509404 [info ] [MainThread]:   port: None
+[0m11:03:00.509626 [info ] [MainThread]:   proxy_host: None
+[0m11:03:00.509838 [info ] [MainThread]:   proxy_port: None
+[0m11:03:00.510052 [info ] [MainThread]:   protocol: None
+[0m11:03:00.510264 [info ] [MainThread]:   connect_retries: 1
+[0m11:03:00.510485 [info ] [MainThread]:   connect_timeout: None
+[0m11:03:00.510700 [info ] [MainThread]:   retry_on_database_errors: False
+[0m11:03:00.510981 [info ] [MainThread]:   retry_all: False
+[0m11:03:00.511199 [info ] [MainThread]:   insecure_mode: False
+[0m11:03:00.511410 [info ] [MainThread]:   reuse_connections: None
+[0m11:03:00.511806 [info ] [MainThread]: Registered adapter: snowflake=1.7.0
+[0m11:03:00.512443 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m11:03:00.513463 [debug] [MainThread]: Using snowflake connection "debug"
+[0m11:03:00.513731 [debug] [MainThread]: On debug: select 1 as id
+[0m11:03:00.513975 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:03:01.809465 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m11:03:01.810992 [debug] [MainThread]: On debug: Close
+[0m11:03:02.191224 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m11:03:02.191711 [info ] [MainThread]: [31m1 check failed:[0m
+[0m11:03:02.191992 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/rsa-key-VM-GCP/workspace/first-pipeline/dbt_project.yml> not found
+
+[0m11:03:02.192809 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 1.9406735, "process_user_time": 2.095126, "process_kernel_time": 0.059768, "process_mem_max_rss": "110876", "process_out_blocks": "24", "command_success": false, "process_in_blocks": "0"}
+[0m11:03:02.193398 [debug] [MainThread]: Command `dbt debug` failed at 11:03:02.193262 after 1.94 seconds
+[0m11:03:02.193743 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m11:03:02.194105 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc646753070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc644699d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc6435de490>]}
+[0m11:03:02.194464 [debug] [MainThread]: Flushing usage events
+[0m11:05:33.192707 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff38aab6070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff38b14b8e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff38b14ba60>]}
+
+
+============================== 11:05:33.196002 | d59ee854-2ac9-4bf6-bfa9-43c0a75e3025 ==============================
+[0m11:05:33.196002 [info ] [MainThread]: Running with dbt=1.7.2
+[0m11:05:33.198212 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/rsa-key-VM-GCP/workspace/first-pipeline', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init first_dbt_project_on_vm', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:05:33.199711 [info ] [MainThread]: A project called first_dbt_project_on_vm already exists here.
+[0m11:05:33.200681 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.05148987, "process_user_time": 1.803812, "process_kernel_time": 0.059969, "process_mem_max_rss": "88952", "process_out_blocks": "8", "process_in_blocks": "0"}
+[0m11:05:33.201291 [debug] [MainThread]: Command `dbt init` succeeded at 11:05:33.201158 after 0.05 seconds
+[0m11:05:33.201658 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff38aab6070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff388a25bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff388a17520>]}
+[0m11:05:33.202010 [debug] [MainThread]: Flushing usage events
+[0m11:07:41.847410 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4650718070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4650dad8e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4650dada60>]}
+
+
+============================== 11:07:41.850930 | bd4a0fdd-f769-46e1-ad65-58d57a4d8a27 ==============================
+[0m11:07:41.850930 [info ] [MainThread]: Running with dbt=1.7.2
+[0m11:07:41.851407 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': '/home/rsa-key-VM-GCP/workspace/first-pipeline', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt init first_dbt_project_on_vm', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:07:41.852201 [info ] [MainThread]: A project called first_dbt_project_on_vm already exists here.
+[0m11:07:41.852913 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.04998309, "process_user_time": 1.814336, "process_kernel_time": 0.043869, "process_mem_max_rss": "88880", "process_out_blocks": "16", "process_in_blocks": "0"}
+[0m11:07:41.853481 [debug] [MainThread]: Command `dbt init` succeeded at 11:07:41.853351 after 0.05 seconds
+[0m11:07:41.853825 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4650718070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f464e687bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f464e679520>]}
+[0m11:07:41.854132 [debug] [MainThread]: Flushing usage events
+[0m11:10:41.532426 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6952a524f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f69509995b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6950999250>]}
+
+
+============================== 11:10:41.536500 | f5bc429b-e89e-402c-9806-49343b73df04 ==============================
+[0m11:10:41.536500 [info ] [MainThread]: Running with dbt=1.7.2
+[0m11:10:41.537004 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/home/rsa-key-VM-GCP/workspace/first-pipeline', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init first_dbt_project_on_vm', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:10:41.537839 [info ] [MainThread]: A project called first_dbt_project_on_vm already exists here.
+[0m11:10:41.538584 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.05065208, "process_user_time": 1.828151, "process_kernel_time": 0.052016, "process_mem_max_rss": "88552", "process_out_blocks": "8", "process_in_blocks": "0"}
+[0m11:10:41.539224 [debug] [MainThread]: Command `dbt init` succeeded at 11:10:41.539093 after 0.05 seconds
+[0m11:10:41.539564 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6952a524f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f69509c1e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f69509c1ca0>]}
+[0m11:10:41.539925 [debug] [MainThread]: Flushing usage events
+[0m11:14:00.142594 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f41baa50340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f41bc1ba4f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f41b89975e0>]}
+
+
+============================== 11:14:00.145726 | 144c96b4-e792-495d-87ed-e6ad9ee29d69 ==============================
+[0m11:14:00.145726 [info ] [MainThread]: Running with dbt=1.7.2
+[0m11:14:00.146181 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/home/rsa-key-VM-GCP/workspace/first-pipeline', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt init first_dbt_project_on_vm', 'send_anonymous_usage_stats': 'True'}
+[0m11:14:00.146998 [info ] [MainThread]: A project called first_dbt_project_on_vm already exists here.
+[0m11:14:00.147702 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.05192609, "process_user_time": 1.815955, "process_kernel_time": 0.063592, "process_mem_max_rss": "88636", "process_out_blocks": "8", "process_in_blocks": "0"}
+[0m11:14:00.148243 [debug] [MainThread]: Command `dbt init` succeeded at 11:14:00.148120 after 0.05 seconds
+[0m11:14:00.148572 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f41baa50340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f41b89bf640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f41b89bf250>]}
+[0m11:14:00.148879 [debug] [MainThread]: Flushing usage events
+[0m11:14:19.300540 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe9db14070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe9e19ecd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe9e19ec10>]}
+
+
+============================== 11:14:19.304275 | 741aa63c-4b74-4ad2-8fa9-eabfc9727c9e ==============================
+[0m11:14:19.304275 [info ] [MainThread]: Running with dbt=1.7.2
+[0m11:14:19.304786 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/root/.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m11:14:19.305326 [info ] [MainThread]: dbt version: 1.7.2
+[0m11:14:19.305610 [info ] [MainThread]: python version: 3.9.2
+[0m11:14:19.305853 [info ] [MainThread]: python path: /usr/bin/python3
+[0m11:14:19.306093 [info ] [MainThread]: os info: Linux-5.10.0-26-cloud-amd64-x86_64-with-glibc2.31
+[0m11:14:19.306367 [info ] [MainThread]: Using profiles dir at /root/.dbt
+[0m11:14:19.306600 [info ] [MainThread]: Using profiles.yml file at /root/.dbt/profiles.yml
+[0m11:14:19.306888 [info ] [MainThread]: Using dbt_project.yml file at /home/rsa-key-VM-GCP/workspace/first-pipeline/dbt_project.yml
+[0m11:14:19.307153 [info ] [MainThread]: Configuration:
+[0m11:14:19.307384 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m11:14:19.307613 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m11:14:19.307839 [info ] [MainThread]: Required dependencies:
+[0m11:14:19.308106 [debug] [MainThread]: Executing "git --help"
+[0m11:14:19.311993 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:14:19.312500 [debug] [MainThread]: STDERR: "b''"
+[0m11:14:19.312791 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:14:19.313074 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m11:14:19.313366 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m11:14:19.313616 [info ] [MainThread]: dbt looked for a profiles.yml file in /root/.dbt/profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m11:14:19.313860 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/rsa-key-VM-GCP/workspace/first-pipeline/dbt_project.yml> not found
+
+[0m11:14:19.314652 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.01953275, "process_user_time": 1.780606, "process_kernel_time": 0.044205, "process_mem_max_rss": "88188", "process_out_blocks": "8", "command_success": false, "process_in_blocks": "0"}
+[0m11:14:19.315301 [debug] [MainThread]: Command `dbt debug` failed at 11:14:19.315162 after 0.02 seconds
+[0m11:14:19.315686 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe9db14070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe9e1add00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe9e1ade20>]}
+[0m11:14:19.316044 [debug] [MainThread]: Flushing usage events
+[0m23:53:45.224392 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff337f38070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3385beca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3385bebe0>]}
+
+
+============================== 23:53:45.227901 | 3eaf5801-e1d9-47b6-a876-fa2a6b5bc5d4 ==============================
+[0m23:53:45.227901 [info ] [MainThread]: Running with dbt=1.7.2
+[0m23:53:45.228373 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt init first_dbt_project_on_vm', 'send_anonymous_usage_stats': 'True'}
+[0m23:53:45.229153 [info ] [MainThread]: A project called first_dbt_project_on_vm already exists here.
+[0m23:53:45.230662 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.01074165, "process_user_time": 1.801279, "process_kernel_time": 0.028096, "process_mem_max_rss": "88176", "process_out_blocks": "8", "process_in_blocks": "0"}
+[0m23:53:45.231243 [debug] [MainThread]: Command `dbt init` succeeded at 23:53:45.231117 after 0.01 seconds
+[0m23:53:45.231568 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff337f38070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff339fe7c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3385cd070>]}
+[0m23:53:45.231894 [debug] [MainThread]: Flushing usage events
+[0m23:54:07.081208 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcae0a95340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcae1120d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcae1120c70>]}
+
+
+============================== 23:54:07.084592 | 69b9a402-5961-4b93-bd9b-6a03a6de47b6 ==============================
+[0m23:54:07.084592 [info ] [MainThread]: Running with dbt=1.7.2
+[0m23:54:07.085106 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/root/.dbt', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m23:54:07.085654 [info ] [MainThread]: dbt version: 1.7.2
+[0m23:54:07.085945 [info ] [MainThread]: python version: 3.9.2
+[0m23:54:07.086183 [info ] [MainThread]: python path: /usr/bin/python3
+[0m23:54:07.086441 [info ] [MainThread]: os info: Linux-5.10.0-26-cloud-amd64-x86_64-with-glibc2.31
+[0m23:54:07.086712 [info ] [MainThread]: Using profiles dir at /root/.dbt
+[0m23:54:07.087031 [info ] [MainThread]: Using profiles.yml file at /root/.dbt/profiles.yml
+[0m23:54:07.087266 [info ] [MainThread]: Using dbt_project.yml file at /home/rsa-key-VM-GCP/workspace/first-pipeline/dbt_project.yml
+[0m23:54:07.087537 [info ] [MainThread]: Configuration:
+[0m23:54:07.087769 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m23:54:07.088001 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m23:54:07.088220 [info ] [MainThread]: Required dependencies:
+[0m23:54:07.088510 [debug] [MainThread]: Executing "git --help"
+[0m23:54:07.092448 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m23:54:07.093026 [debug] [MainThread]: STDERR: "b''"
+[0m23:54:07.093325 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:54:07.093597 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m23:54:07.093912 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m23:54:07.094167 [info ] [MainThread]: dbt looked for a profiles.yml file in /root/.dbt/profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m23:54:07.094424 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/rsa-key-VM-GCP/workspace/first-pipeline/dbt_project.yml> not found
+
+[0m23:54:07.095349 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.01941914, "process_user_time": 1.790896, "process_kernel_time": 0.047986, "process_mem_max_rss": "88144", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m23:54:07.095932 [debug] [MainThread]: Command `dbt debug` failed at 23:54:07.095790 after 0.02 seconds
+[0m23:54:07.096338 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcae0a95340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcae112fc10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcae112ff10>]}
+[0m23:54:07.096711 [debug] [MainThread]: Flushing usage events
+[0m23:55:59.749195 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d680c8730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d687bfd60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d687bfca0>]}
+
+
+============================== 23:55:59.752359 | 2bdd58d2-1661-4ec1-ae62-9187fa529d20 ==============================
+[0m23:55:59.752359 [info ] [MainThread]: Running with dbt=1.7.2
+[0m23:55:59.752821 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': '/root/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt init first_dbt_project_on_vm', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m23:55:59.753658 [info ] [MainThread]: A project called first_dbt_project_on_vm already exists here.
+[0m23:55:59.754355 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.00922964, "process_user_time": 1.72676, "process_kernel_time": 0.055841, "process_mem_max_rss": "88108", "process_out_blocks": "8", "process_in_blocks": "0"}
+[0m23:55:59.754925 [debug] [MainThread]: Command `dbt init` succeeded at 23:55:59.754779 after 0.01 seconds
+[0m23:55:59.755244 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d680c8730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d6a1e8c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d687cd0d0>]}
+[0m23:55:59.755544 [debug] [MainThread]: Flushing usage events
+[0m23:58:58.913419 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4bd0eb5730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4bcee7ae80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4bcee7a3a0>]}
+
+
+============================== 23:58:58.916669 | f3752d8a-270a-479e-8b78-d9c286f5e7bf ==============================
+[0m23:58:58.916669 [info ] [MainThread]: Running with dbt=1.7.2
+[0m23:58:58.917140 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/rsa-key-VM-GCP/workspace/first-pipeline', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt init first_dbt_project_on_vm', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m23:58:58.917934 [info ] [MainThread]: A project called first_dbt_project_on_vm already exists here.
+[0m23:58:58.918640 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.049943, "process_user_time": 1.815435, "process_kernel_time": 0.044098, "process_mem_max_rss": "88800", "process_out_blocks": "16", "process_in_blocks": "0"}
+[0m23:58:58.919261 [debug] [MainThread]: Command `dbt init` succeeded at 23:58:58.919127 after 0.05 seconds
+[0m23:58:58.919603 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4bd0eb5730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4bcee6aa00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4bcee6a250>]}
+[0m23:58:58.919927 [debug] [MainThread]: Flushing usage events
+[0m00:08:34.241796 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f74b36db4f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f74b3d61cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f74b3d61c10>]}
+
+
+============================== 00:08:34.245050 | e2c004fa-fbb2-4efe-a9b9-06e9b0c8ff66 ==============================
+[0m00:08:34.245050 [info ] [MainThread]: Running with dbt=1.7.2
+[0m00:08:34.245571 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/root/.dbt', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt init first_dbt_project_on_vm', 'send_anonymous_usage_stats': 'True'}
+[0m00:08:34.246349 [info ] [MainThread]: A project called first_dbt_project_on_vm already exists here.
+[0m00:08:34.247096 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.009922421, "process_user_time": 1.735218, "process_kernel_time": 0.067536, "process_mem_max_rss": "88080", "process_out_blocks": "8", "process_in_blocks": "0"}
+[0m00:08:34.247623 [debug] [MainThread]: Command `dbt init` succeeded at 00:08:34.247494 after 0.01 seconds
+[0m00:08:34.247936 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f74b36db4f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f74b578ac70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f74b3d700a0>]}
+[0m00:08:34.248243 [debug] [MainThread]: Flushing usage events
+[0m00:10:54.752332 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3d255cb340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3d25c51d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3d25c51c40>]}
+
+
+============================== 00:10:54.755582 | 0d7d3a7d-b910-48ee-94a0-ffe614b48575 ==============================
+[0m00:10:54.755582 [info ] [MainThread]: Running with dbt=1.7.2
+[0m00:10:54.756026 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': '/root/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init first_dbt_project_on_vm', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:10:54.756782 [info ] [MainThread]: A project called first_dbt_project_on_vm already exists here.
+[0m00:10:54.757470 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.00937939, "process_user_time": 1.755928, "process_kernel_time": 0.068647, "process_mem_max_rss": "88100", "process_out_blocks": "16", "process_in_blocks": "0"}
+[0m00:10:54.757969 [debug] [MainThread]: Command `dbt init` succeeded at 00:10:54.757840 after 0.01 seconds
+[0m00:10:54.758266 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3d255cb340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3d2767ac70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3d25c60100>]}
+[0m00:10:54.758567 [debug] [MainThread]: Flushing usage events
+[0m00:14:00.725438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7f61aa1070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7f62127ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7f62127be0>]}
+
+
+============================== 00:14:00.728463 | 39b7a397-eb36-458e-af96-44e10e5478c5 ==============================
+[0m00:14:00.728463 [info ] [MainThread]: Running with dbt=1.7.2
+[0m00:14:00.728898 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/root/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt init first_dbt_project_on_vm', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:14:00.729644 [info ] [MainThread]: A project called first_dbt_project_on_vm already exists here.
+[0m00:14:00.730344 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.008797989, "process_user_time": 1.742985, "process_kernel_time": 0.067816, "process_mem_max_rss": "87788", "process_out_blocks": "8", "process_in_blocks": "0"}
+[0m00:14:00.730887 [debug] [MainThread]: Command `dbt init` succeeded at 00:14:00.730725 after 0.01 seconds
+[0m00:14:00.731188 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7f61aa1070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7f63b50c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7f62136070>]}
+[0m00:14:00.731493 [debug] [MainThread]: Flushing usage events
+[0m00:34:26.394875 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc79689340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc79d0fd00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc79d0fc40>]}
+
+
+============================== 00:34:26.399015 | c7b291e2-315e-4b26-9731-d121dc5b8f07 ==============================
+[0m00:34:26.399015 [info ] [MainThread]: Running with dbt=1.7.2
+[0m00:34:26.399526 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt init first_dbt_project_on_vm', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m00:34:26.400468 [info ] [MainThread]: A project called first_dbt_project_on_vm already exists here.
+[0m00:34:26.401209 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.01059247, "process_user_time": 1.767417, "process_kernel_time": 0.047778, "process_mem_max_rss": "88128", "process_out_blocks": "8", "process_in_blocks": "0"}
+[0m00:34:26.401740 [debug] [MainThread]: Command `dbt init` succeeded at 00:34:26.401614 after 0.01 seconds
+[0m00:34:26.402062 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc79689340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc7b738c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc79d1e100>]}
+[0m00:34:26.402372 [debug] [MainThread]: Flushing usage events
+[0m02:55:30.578824 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6e3abd8310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6e3b25ed30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6e3b25ec70>]}
+
+
+============================== 02:55:30.581814 | e984ad36-98a3-48da-9db5-468abe14bc31 ==============================
+[0m02:55:30.581814 [info ] [MainThread]: Running with dbt=1.7.2
+[0m02:55:30.582248 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt init first_dbt_project_on_vm', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m02:55:30.583017 [info ] [MainThread]: A project called first_dbt_project_on_vm already exists here.
+[0m02:55:30.583672 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.00878519, "process_user_time": 1.7452, "process_kernel_time": 0.063764, "process_mem_max_rss": "88164", "process_out_blocks": "8", "process_in_blocks": "0"}
+[0m02:55:30.584163 [debug] [MainThread]: Command `dbt init` succeeded at 02:55:30.584045 after 0.01 seconds
+[0m02:55:30.584466 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6e3abd8310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6e3cc87c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6e3b26d160>]}
+[0m02:55:30.584762 [debug] [MainThread]: Flushing usage events
