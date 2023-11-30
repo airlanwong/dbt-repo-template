@@ -1,4 +1,4 @@
-dbt_project_demo:
+dbt_project_demo1111:
   outputs:
     dev:
       account: pe15223.southeast-asia.azure
