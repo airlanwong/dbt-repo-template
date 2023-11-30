@@ -1,4 +1,4 @@
-dbt_project_demoasd131:
+success_dbt_project_from_jenkins_pipe:
   outputs:
     dev:
       account: pe15223.southeast-asia.azure
