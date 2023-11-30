@@ -1,0 +1,12 @@
+dbt_project_demo2:
+  outputs:
+    dev:
+      account: pe15223.southeast-asia.azure
+      database: HDB
+      password: 21J23e91.
+      schema: public
+      threads: 1
+      type: snowflake
+      user: alanzapex
+      warehouse: COMPUTE_WH
+  target: dev
